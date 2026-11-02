@@ -1,0 +1,683 @@
+{
+  "Overview": ["Обзор", "Umumiy ko‘rinish"],
+  "Workspace": ["Рабочее пространство", "Ish maydoni"],
+  "Settings": ["Настройки", "Sozlamalar"],
+  "Settings & privacy": [
+    "Настройки и конфиденциальность",
+    "Sozlamalar va maxfiylik"
+  ],
+  "People": ["Сотрудники", "Xodimlar"],
+  "Recruitment": ["Подбор персонала", "Ishga qabul qilish"],
+  "Interviews": ["Собеседования", "Suhbatlar"],
+  "Learning & development": ["Обучение и развитие", "Ta’lim va rivojlanish"],
+  "Payroll & benefits": ["Зарплата и льготы", "Ish haqi va imtiyozlar"],
+  "Employee relations": ["Обращения сотрудников", "Xodimlar murojaatlari"],
+  "Performance reviews": ["Оценка эффективности", "Faoliyatni baholash"],
+  "HR admin": ["HR-администратор", "HR administratori"],
+  "Hiring manager": ["Руководитель найма", "Ishga qabul menejeri"],
+  "Employee": ["Сотрудник", "Xodim"],
+  "employee": ["сотрудника", "xodim"],
+  "candidate": ["кандидата", "nomzod"],
+  "interview": ["собеседование", "suhbat"],
+  "learning plan": ["план обучения", "o‘quv rejasi"],
+  "payroll record": ["расчёт зарплаты", "ish haqi yozuvi"],
+  "case": ["обращение", "murojaat"],
+  "review": ["оценку", "baholash"],
+  "Applied": ["Новая заявка", "Ariza topshirilgan"],
+  "Screening": ["Первичный отбор", "Dastlabki saralash"],
+  "Interview": ["Собеседование", "Suhbat"],
+  "Offer": ["Предложение", "Taklif"],
+  "Hired": ["Принят", "Ishga olingan"],
+  "Rejected": ["Отказ", "Rad etilgan"],
+  "Scheduled": ["Запланировано", "Rejalashtirilgan"],
+  "Completed": ["Завершено", "Yakunlangan"],
+  "Cancelled": ["Отменено", "Bekor qilingan"],
+  "Active": ["Активен", "Faol"],
+  "On leave": ["В отпуске", "Ta’tilda"],
+  "Inactive": ["Неактивен", "Faol emas"],
+  "Not started": ["Не начато", "Boshlanmagan"],
+  "In progress": ["В процессе", "Jarayonda"],
+  "Draft": ["Черновик", "Qoralama"],
+  "Reviewed": ["Проверено", "Tekshirilgan"],
+  "Approved": ["Утверждено", "Tasdiqlangan"],
+  "Open": ["Открыто", "Ochiq"],
+  "Resolved": ["Решено", "Hal qilingan"],
+  "In review": ["На рассмотрении", "Ko‘rib chiqilmoqda"],
+  "Engineering": ["Разработка", "Dasturlash"],
+  "Design": ["Дизайн", "Dizayn"],
+  "Marketing": ["Маркетинг", "Marketing"],
+  "All teams": ["Все отделы", "Barcha bo‘limlar"],
+  "All statuses": ["Все статусы", "Barcha holatlar"],
+  "Recent first": ["Сначала новые", "Avval yangilari"],
+  "Name A–Z": ["По имени А–Я", "Ism bo‘yicha A–Z"],
+  "Name": ["Имя / название", "Ism / nom"],
+  "Department": ["Отдел", "Bo‘lim"],
+  "Department / role": ["Отдел / должность", "Bo‘lim / lavozim"],
+  "Status": ["Статус", "Holat"],
+  "Details": ["Подробности", "Tafsilotlar"],
+  "Actions": ["Действия", "Amallar"],
+  "Candidate": ["Кандидат", "Nomzod"],
+  "Conversation": ["Встреча", "Uchrashuv"],
+  "Learning plan": ["План обучения", "O‘quv rejasi"],
+  "Case": ["Обращение", "Murojaat"],
+  "Cycle & reviewer": ["Период и руководитель", "Davr va baholovchi"],
+  "Period & gross": ["Период и начислено", "Davr va hisoblangan"],
+  "When": ["Когда", "Qachon"],
+  "Progress": ["Прогресс", "Natija"],
+  "Rating": ["Оценка", "Baho"],
+  "Owner / priority": ["Ответственный / приоритет", "Mas’ul / ustuvorlik"],
+  "Job title": ["Должность", "Lavozim"],
+  "Email": ["Электронная почта", "Elektron pochta"],
+  "Location": ["Местоположение", "Joylashuv"],
+  "Source": ["Источник", "Manba"],
+  "Careers page": ["Страница вакансий", "Vakansiyalar sahifasi"],
+  "Referral": ["Рекомендация", "Tavsiya"],
+  "Other": ["Другое", "Boshqa"],
+  "Remote": ["Удалённо", "Masofadan"],
+  "Video call": ["Видеозвонок", "Videoqo‘ng‘iroq"],
+  "In person": ["Лично", "Yuzma-yuz"],
+  "Phone": ["Телефон", "Telefon"],
+  "Date": ["Дата", "Sana"],
+  "Time · Asia/Tashkent": ["Время · Ташкент", "Vaqt · Toshkent"],
+  "Interviewer": ["Интервьюер", "Suhbat o‘tkazuvchi"],
+  "Format": ["Формат", "Shakl"],
+  "Choose a candidate": ["Выберите кандидата", "Nomzodni tanlang"],
+  "Conversation title": ["Название встречи", "Uchrashuv nomi"],
+  "Learning plan title": ["Название плана обучения", "O‘quv rejasi nomi"],
+  "Case title": ["Тема обращения", "Murojaat mavzusi"],
+  "Skill / category": ["Навык / категория", "Ko‘nikma / toifa"],
+  "Progress · 0–100%": ["Прогресс · 0–100%", "Natija · 0–100%"],
+  "Target date": ["Срок завершения", "Tugatish sanasi"],
+  "Development goal": ["Цель развития", "Rivojlanish maqsadi"],
+  "Period": ["Период", "Davr"],
+  "Base amount · USD": ["Основная сумма · USD", "Asosiy summa · USD"],
+  "Bonus · USD": ["Премия · USD", "Mukofot · USD"],
+  "Illustrative deduction · %": [
+    "Условное удержание · %",
+    "Namunaviy ushlanma · %"
+  ],
+  "Benefits tracking notes": [
+    "Заметки о льготах",
+    "Imtiyozlar haqidagi qaydlar"
+  ],
+  "Gross": ["Начислено", "Hisoblangan"],
+  "Demo deduction": ["Демоудержание", "Namunaviy ushlanma"],
+  "Illustrative gross": ["Условно начислено", "Namunaviy hisoblangan"],
+  "Illustrative net": ["Условно к выплате", "Namunaviy sof to‘lov"],
+  "Awaiting approval": ["Ожидает утверждения", "Tasdiq kutilmoqda"],
+  "Case owner": ["Ответственный", "Mas’ul"],
+  "Priority": ["Приоритет", "Ustuvorlik"],
+  "High": ["Высокий", "Yuqori"],
+  "Normal": ["Обычный", "Odatdagi"],
+  "Low": ["Низкий", "Past"],
+  "Issue summary · fictional details only": [
+    "Описание · только вымышленные данные",
+    "Tavsif · faqat xayoliy ma’lumotlar"
+  ],
+  "Resolution · required when resolved": [
+    "Решение · обязательно при закрытии",
+    "Yechim · hal qilinganda majburiy"
+  ],
+  "Review cycle": ["Период оценки", "Baholash davri"],
+  "Reviewer": ["Оценивающий", "Baholovchi"],
+  "Review feedback": ["Комментарий к оценке", "Baholash bo‘yicha fikr"],
+  "Recruiter notes": ["Заметки рекрутера", "Rekruter qaydlari"],
+  "Evaluation & feedback": ["Оценка и комментарии", "Baholash va fikrlar"],
+  "Evaluation rating · 0 = unrated, 1–5": [
+    "Оценка · 0 = не оценено, 1–5",
+    "Baho · 0 = baholanmagan, 1–5"
+  ],
+  "Rating · 0 = unrated, 1–5": [
+    "Оценка · 0 = не оценено, 1–5",
+    "Baho · 0 = baholanmagan, 1–5"
+  ],
+  "Add": ["Добавить", "Qo‘shish"],
+  "Edit": ["Изменить", "Tahrirlash"],
+  "View": ["Открыть", "Ko‘rish"],
+  "Save": ["Сохранить", "Saqlash"],
+  "Cancel": ["Отмена", "Bekor qilish"],
+  "Close": ["Закрыть", "Yopish"],
+  "Export": ["Экспорт", "Eksport"],
+  "List": ["Список", "Ro‘yxat"],
+  "Pipeline": ["Воронка", "Bosqichlar"],
+  "Previous": ["Назад", "Oldingi"],
+  "Next": ["Далее", "Keyingi"],
+  "of": ["из", "dan"],
+  "records": ["записей", "yozuv"],
+  "priority": ["приоритет", "ustuvorlik"],
+  "gross": ["начислено", "hisoblangan"],
+  "Due": ["Срок", "Muddat"],
+  "Unrated": ["Без оценки", "Baholanmagan"],
+  "In motion": ["В работе", "Ish jarayonida"],
+  "Completed plans": ["Завершённые планы", "Yakunlangan rejalar"],
+  "Departments": ["Отделы", "Bo‘limlar"],
+  "Candidate workspace": ["Кандидаты", "Nomzodlar maydoni"],
+  "Interview schedule": ["Расписание собеседований", "Suhbat jadvali"],
+  "Learning paths": ["Планы обучения", "O‘quv rejalari"],
+  "Compensation ledger": ["Реестр начислений", "Hisoblash reyestri"],
+  "Case workspace": ["Обращения", "Murojaatlar maydoni"],
+  "Employee directory": ["Справочник сотрудников", "Xodimlar ro‘yxati"],
+  "No candidates": ["Нет кандидатов", "Nomzodlar yo‘q"],
+  "No records found": ["Записи не найдены", "Yozuvlar topilmadi"],
+  "Try a different search or clear your filters.": [
+    "Измените запрос или сбросьте фильтры.",
+    "Qidiruvni o‘zgartiring yoki filtrlarni tozalang."
+  ],
+  "Clear filters": ["Сбросить фильтры", "Filtrlarni tozalash"],
+  "Clear search": ["Очистить поиск", "Qidiruvni tozalash"],
+  "Filter by status": ["Фильтр по статусу", "Holat bo‘yicha filtr"],
+  "Filter by department": ["Фильтр по отделу", "Bo‘lim bo‘yicha filtr"],
+  "Sort records": ["Сортировка", "Yozuvlarni saralash"],
+  "Main navigation": ["Основная навигация", "Asosiy navigatsiya"],
+  "Open navigation": ["Открыть меню", "Menyuni ochish"],
+  "Close navigation": ["Закрыть меню", "Menyuni yopish"],
+  "Close dialog": ["Закрыть окно", "Oynani yopish"],
+  "Demo workspace": ["Демонстрационное пространство", "Namuna ish maydoni"],
+  "FOLIO WORKSPACE": ["ПРОСТРАНСТВО FOLIO", "FOLIO ISH MAYDONI"],
+  "WORKSPACE": ["РАБОЧЕЕ ПРОСТРАНСТВО", "ISH MAYDONI"],
+  "Your people workspace": [
+    "Пространство вашей команды",
+    "Jamoangiz ish maydoni"
+  ],
+  "People make it possible.": [
+    "Всё начинается с людей.",
+    "Barchasi insonlardan boshlanadi."
+  ],
+  "A little clarity. A lot of potential.": [
+    "Больше ясности. Больше возможностей.",
+    "Aniqlik va katta imkoniyatlar."
+  ],
+  "Explore your workspace": ["Открыть руководство", "Qo‘llanmani ochish"],
+  "Help & demo guide": [
+    "Помощь и деморуководство",
+    "Yordam va namuna qo‘llanmasi"
+  ],
+  "View activity": ["Посмотреть активность", "Faollikni ko‘rish"],
+  "About this demo": ["Об этой демоверсии", "Namuna haqida"],
+  "Made for exploring. Fictional data, saved only in this browser.": [
+    "Для знакомства. Вымышленные данные сохраняются только в этом браузере.",
+    "Sinab ko‘rish uchun. Xayoliy ma’lumotlar faqat shu brauzerda saqlanadi."
+  ],
+  "Browser storage is unavailable. Changes will last only for this session.": [
+    "Хранилище браузера недоступно. Изменения сохранятся только до закрытия страницы.",
+    "Brauzer xotirasi mavjud emas. O‘zgarishlar faqat joriy seansda saqlanadi."
+  ],
+  "YOUR WORKSPACE, YOUR WAY": [
+    "ВАШЕ ПРОСТРАНСТВО — ВАШИ ПРАВИЛА",
+    "ISH MAYDONI SIZNING IXTIYORINGIZDA"
+  ],
+  "Understand the demo and explore different perspectives.": [
+    "Изучите демоверсию с разных ролей.",
+    "Namunani turli rollarda sinab ko‘ring."
+  ],
+  "See it from another seat": ["Взгляд с другой роли", "Boshqa roldan ko‘ring"],
+  "Demo role": ["Демонстрационная роль", "Namuna roli"],
+  "Preview the workspace as an HR admin, an Engineering hiring manager, or Alex, an employee.": [
+    "Посмотрите пространство как HR-администратор, руководитель разработки или сотрудник Алекс.",
+    "Ish maydonini HR administratori, dasturlash menejeri yoki xodim Aleks sifatida ko‘ring."
+  ],
+  "Role switching simulates visibility and editing rules in this browser. It is not authentication or a security boundary.": [
+    "Переключение ролей лишь имитирует права доступа в браузере. Это не авторизация и не защита данных.",
+    "Rollarni almashtirish brauzerda ko‘rish va tahrirlash huquqlarini taqlid qiladi. Bu autentifikatsiya yoki ma’lumotlarni himoyalash emas."
+  ],
+  "A safe space to explore": [
+    "Пространство для знакомства",
+    "Sinab ko‘rish maydoni"
+  ],
+  "Use fictional information only. Records and the activity log live in localStorage on this browser, without encryption, accounts, or a server database.": [
+    "Используйте только вымышленные данные. Записи и журнал хранятся в localStorage без шифрования, аккаунтов и серверной базы.",
+    "Faqat xayoliy ma’lumotlardan foydalaning. Yozuvlar va jurnal shu brauzerning localStorage xotirasida shifrlanmasdan, hisoblarsiz va server bazasisiz saqlanadi."
+  ],
+  "Read the demo guide": ["Прочитать руководство", "Qo‘llanmani o‘qish"],
+  "There are no bank details, government IDs, file uploads, or real payroll transactions.": [
+    "Здесь нет банковских реквизитов, удостоверений личности, загрузки файлов и реальных выплат.",
+    "Bank rekvizitlari, shaxsiy hujjatlar, fayl yuklash va haqiqiy to‘lovlar mavjud emas."
+  ],
+  "Your demo data": ["Ваши демоданные", "Namuna ma’lumotlaringiz"],
+  "Download the records visible to your selected demo role, or restore the original sample workspace.": [
+    "Скачайте доступные выбранной роли записи или восстановите исходные примеры.",
+    "Tanlangan rolga ko‘rinadigan yozuvlarni yuklab oling yoki dastlabki namunalarni tiklang."
+  ],
+  "Export visible data": [
+    "Экспорт доступных данных",
+    "Ko‘rinadigan ma’lumotlarni eksport qilish"
+  ],
+  "Reset demo": ["Сбросить демоданные", "Namunani tiklash"],
+  "Before real-world use": [
+    "Перед реальным использованием",
+    "Haqiqiy foydalanishdan oldin"
+  ],
+  "Add server-side authentication and authorization, a protected database, encryption, audit retention, backups, and region-specific privacy controls. Connect a qualified payroll provider for taxes, benefits, and payments.": [
+    "Добавьте серверную авторизацию, защищённую базу, шифрование, аудит, резервные копии и необходимые меры конфиденциальности. Для налогов, льгот и выплат подключите специализированный сервис.",
+    "Server autentifikatsiyasi va ruxsat nazorati, himoyalangan baza, shifrlash, audit, zaxira nusxalar va hududiy maxfiylik choralarini qo‘shing. Soliq, imtiyoz va to‘lovlar uchun malakali xizmatni ulang."
+  ],
+  "Starter application": ["Стартовое приложение", "Boshlang‘ich ilova"],
+  "THE PEOPLE BEHIND THE WORK": [
+    "ЛЮДИ, КОТОРЫЕ СОЗДАЮТ РЕЗУЛЬТАТ",
+    "NATIJA ORTIDAGI INSONLAR"
+  ],
+  "PEOPLE OPERATIONS": ["УПРАВЛЕНИЕ ПЕРСОНАЛОМ", "XODIMLARNI BOSHQARISH"],
+  "Payroll simulation · USD": [
+    "Имитация расчёта зарплаты · USD",
+    "Ish haqi hisoblash namunasi · USD"
+  ],
+  "Illustrative amounts only. Deduction rates are fictional inputs, not tax rules. Approval records a demo status; it never sends money, files taxes, or enrolls benefits.": [
+    "Суммы условные. Удержания не являются налоговыми ставками. Утверждение меняет только демостатус: деньги не отправляются, налоги не подаются, льготы не оформляются.",
+    "Summalar namunaviy. Ushlanma stavkalari soliq qoidalari emas. Tasdiqlash faqat namuna holatini o‘zgartiradi: pul yuborilmaydi, soliq topshirilmaydi va imtiyoz rasmiylashtirilmaydi."
+  ],
+  "Restricted to the HR admin demo role. Use fictional issues only; this browser store is not a confidential case system.": [
+    "Доступно только роли HR-администратора. Только вымышленные обращения: хранилище браузера не обеспечивает конфиденциальность.",
+    "Faqat HR administratori roliga ochiq. Faqat xayoliy murojaatlardan foydalaning: brauzer xotirasi maxfiy tizim emas."
+  ],
+  "Changes are saved to this browser.": [
+    "Изменения сохраняются в этом браузере.",
+    "O‘zgarishlar shu brauzerda saqlanadi."
+  ],
+  "Read-only preview.": ["Только просмотр.", "Faqat ko‘rish."],
+  "demo view ·": ["деморежим ·", "namuna ko‘rinishi ·"],
+  "Thoughtfully made for people.": [
+    "Создано с заботой о людях.",
+    "Insonlar uchun e’tibor bilan yaratilgan."
+  ],
+  "Folio workspace": ["Пространство Folio", "Folio ish maydoni"],
+  "Demo edition": ["Демоверсия", "Namuna versiyasi"],
+  "Workspace activity": ["Активность пространства", "Ish maydoni faolligi"],
+  "Start fresh?": ["Начать заново?", "Qaytadan boshlaysizmi?"],
+  "A little clarity before you explore": [
+    "Что нужно знать перед началом",
+    "Boshlashdan oldin bilish kerak"
+  ],
+  "Browser-local demo activity. This is not an immutable audit log.": [
+    "Демоактивность хранится в браузере. Это не защищённый журнал аудита.",
+    "Namuna faolligi brauzerda saqlanadi. Bu o‘zgarmas audit jurnali emas."
+  ],
+  "Workspace activity is limited to the HR admin demo role.": [
+    "Активность доступна только HR-администратору.",
+    "Faollik faqat HR administratori roliga ochiq."
+  ],
+  "This replaces all demo changes in this browser with the original fictional records. You can export visible data from Settings first.": [
+    "Все изменения в этом браузере будут заменены исходными примерами. Сначала можно экспортировать данные из настроек.",
+    "Shu brauzerdagi barcha o‘zgarishlar dastlabki xayoliy yozuvlar bilan almashtiriladi. Avval sozlamalardan ma’lumotlarni eksport qilishingiz mumkin."
+  ],
+  "Keep my changes": ["Сохранить мои изменения", "O‘zgarishlarimni qoldirish"],
+  "Reset demo data": ["Восстановить примеры", "Namuna ma’lumotlarini tiklash"],
+  "Demo workspace restored": [
+    "Демоданные восстановлены",
+    "Namuna ma’lumotlari tiklandi"
+  ],
+  "Visible demo records exported": [
+    "Доступные демозаписи экспортированы",
+    "Ko‘rinadigan namuna yozuvlari eksport qilindi"
+  ],
+  "FUNCTIONAL STARTER · FICTIONAL DATA": [
+    "СТАРТОВОЕ ПРИЛОЖЕНИЕ · ВЫМЫШЛЕННЫЕ ДАННЫЕ",
+    "BOSHLANG‘ICH ILOVA · XAYOLIY MA’LUMOTLAR"
+  ],
+  "Your people, their next chapter.": [
+    "Ваша команда, её новая глава.",
+    "Jamoangizning yangi bosqichi."
+  ],
+  "What works": ["Что работает", "Nimalar ishlaydi"],
+  "What is simulated": ["Что имитируется", "Nimalar taqlid qilinadi"],
+  "Keep real information out": [
+    "Не вводите реальные данные",
+    "Haqiqiy ma’lumotlarni kiritmang"
+  ],
+  "Let’s explore": ["Начать знакомство", "Sinab ko‘ramiz"],
+  "Dismiss notification": ["Закрыть уведомление", "Bildirishnomani yopish"],
+  "MONDAY, NOVEMBER 2, 2026": [
+    "ПОНЕДЕЛЬНИК, 2 НОЯБРЯ 2026",
+    "DUSHANBA, 2-NOYABR 2026"
+  ],
+  "DEMO DAY": ["ДЕМОДЕНЬ", "NAMUNA KUNI"],
+  "A good day for great people": [
+    "Хороший день для замечательных людей",
+    "Ajoyib insonlar uchun yaxshi kun"
+  ],
+  "Here’s what’s happening across your": [
+    "Что происходит сегодня:",
+    "Bugungi yangiliklar:"
+  ],
+  "Engineering team": ["команда разработки", "dasturlash jamoasi"],
+  "personal workspace": ["личное пространство", "shaxsiy ish maydoni"],
+  "workspace": ["рабочее пространство", "ish maydoni"],
+  "today.": ["", ""],
+  "November 2026": ["Ноябрь 2026", "Noyabr 2026"],
+  "PEOPLE FIRST. ALWAYS.": [
+    "ЛЮДИ НА ПЕРВОМ МЕСТЕ. ВСЕГДА.",
+    "AVVALO INSONLAR. HAR DOIM."
+  ],
+  "Room to grow.": ["Возможности для роста.", "O‘sish uchun imkoniyat."],
+  "Space to do your best work.": [
+    "Пространство для лучших результатов.",
+    "Eng yaxshi ish uchun qulay muhit."
+  ],
+  "Big plans start with the right people. Let’s make": [
+    "Большие планы начинаются с людей. Пусть",
+    "Katta rejalar munosib insonlardan boshlanadi."
+  ],
+  "their next chapter a great one.": [
+    "новая глава будет яркой.",
+    "Ularning yangi bosqichi ajoyib bo‘lsin."
+  ],
+  "Meet your": ["Познакомьтесь:", "Tanishib chiqing:"],
+  "people": ["команда", "jamoa"],
+  "learning paths": ["планы обучения", "o‘quv rejalari"],
+  "Better, together.": ["Вместе лучше.", "Birgalikda yaxshiroq."],
+  "A place for everyone to thrive": [
+    "Место для роста каждого",
+    "Har kimning rivojlanish maskani"
+  ],
+  "people. Endless potential.": [
+    "человек. Безграничный потенциал.",
+    "inson. Cheksiz salohiyat."
+  ],
+  "Your next chapter starts here": [
+    "Новая глава начинается здесь",
+    "Yangi bosqich shu yerdan boshlanadi"
+  ],
+  "Your profile": ["Ваш профиль", "Profilingiz"],
+  "Total employees": ["Всего сотрудников", "Jami xodimlar"],
+  "Active candidates": ["Активные кандидаты", "Faol nomzodlar"],
+  "Invest in your next chapter": [
+    "Вкладывайте в своё развитие",
+    "Rivojlanishingizga sarmoya kiriting"
+  ],
+  "Completed learning": ["Обучение завершено", "Yakunlangan ta’lim"],
+  "Scheduled interviews": [
+    "Запланированные встречи",
+    "Rejalashtirilgan suhbatlar"
+  ],
+  "Keep the momentum going": [
+    "Продолжайте двигаться вперёд",
+    "Rivojlanishda davom eting"
+  ],
+  "Conversations on the calendar": [
+    "Встречи в расписании",
+    "Jadvaldagi suhbatlar"
+  ],
+  "Reviews in progress": ["Оценки в работе", "Jarayondagi baholashlar"],
+  "Q4 2026 review cycle": [
+    "Оценка за IV квартал 2026",
+    "2026-yil IV chorak baholashi"
+  ],
+  "A little momentum. A lot of possibility.": [
+    "Движение вперёд. Новые возможности.",
+    "Harakat va yangi imkoniyatlar."
+  ],
+  "Growth in progress.": [
+    "Развитие продолжается.",
+    "Rivojlanish davom etmoqda."
+  ],
+  "A snapshot of your current candidate journey.": [
+    "Текущие этапы подбора кандидатов.",
+    "Nomzodlarning joriy bosqichlari."
+  ],
+  "Where the Q4 review cycle stands.": [
+    "Текущее состояние квартальной оценки.",
+    "Chorak baholashining joriy holati."
+  ],
+  "Dashboard chart": ["Диаграмма обзора", "Umumiy ko‘rinish diagrammasi"],
+  "Hiring pipeline": ["Воронка найма", "Qabul bosqichlari"],
+  "reviews this cycle": ["оценок за период", "davrdagi baholashlar"],
+  "candidates in the pipeline": [
+    "кандидатов в воронке",
+    "bosqichlardagi nomzodlar"
+  ],
+  "Live from your demo records": [
+    "На основе ваших демоданных",
+    "Namuna yozuvlaringiz asosida"
+  ],
+  "Current stage counts": [
+    "Количество на каждом этапе",
+    "Har bir bosqichdagi son"
+  ],
+  "reviews": ["оценки", "baholashlar"],
+  "recruitment": ["подбор", "ishga qabul"],
+  "Your learning journey": ["Ваш путь развития", "Rivojlanish yo‘lingiz"],
+  "Coming up next": ["Ближайшие встречи", "Yaqinlashayotgan uchrashuvlar"],
+  "Make space for a new skill.": [
+    "Найдите время для нового навыка.",
+    "Yangi ko‘nikma uchun vaqt ajrating."
+  ],
+  "A conversation could change everything.": [
+    "Одна встреча может изменить всё.",
+    "Bir suhbat hammasini o‘zgartirishi mumkin."
+  ],
+  "% complete ·": ["% завершено ·", "% bajarilgan ·"],
+  "No interviews scheduled. A fresh start.": [
+    "Собеседований пока нет.",
+    "Hozircha suhbatlar rejalashtirilmagan."
+  ],
+  "Explore all learning": ["Все планы обучения", "Barcha o‘quv rejalari"],
+  "View interview schedule": [
+    "Расписание собеседований",
+    "Suhbat jadvalini ko‘rish"
+  ],
+  "The people behind the progress": [
+    "Люди, которые создают результат",
+    "Natija ortidagi insonlar"
+  ],
+  "A few familiar faces from your team.": [
+    "Знакомые лица вашей команды.",
+    "Jamoangizning tanish insonlari."
+  ],
+  "View all": ["Посмотреть всех", "Barchasini ko‘rish"],
+  "Make room for growth": [
+    "Создайте возможности для роста",
+    "Rivojlanishga imkon bering"
+  ],
+  "Small steps. Meaningful progress.": [
+    "Маленькие шаги. Значимые результаты.",
+    "Kichik qadamlar. Muhim natijalar."
+  ],
+  "Keep the curiosity going.": [
+    "Продолжайте узнавать новое.",
+    "Yangilikka intiling."
+  ],
+  "Average progress across": [
+    "Средний прогресс",
+    "Ko‘rinadigan o‘quv rejalari"
+  ],
+  "your visible learning plans.": [
+    "доступных планов обучения.",
+    "bo‘yicha o‘rtacha natija."
+  ],
+  "Explore learning": ["Открыть обучение", "Ta’limni ko‘rish"],
+  "A great workspace starts with a little care.": [
+    "Забота создаёт хорошую рабочую среду.",
+    "Yaxshi ish muhiti e’tibordan boshlanadi."
+  ],
+  "Take a moment to check in on your development.": [
+    "Уделите время своему развитию.",
+    "Rivojlanishingizga vaqt ajrating."
+  ],
+  "Keep the important things moving, one thoughtful step at a time.": [
+    "Двигайте важные дела вперёд, шаг за шагом.",
+    "Muhim ishlarni qadam-baqadam oldinga siljiting."
+  ],
+  "View my reviews": ["Мои оценки", "Mening baholashlarim"],
+  "Add a candidate": ["Добавить кандидата", "Nomzod qo‘shish"],
+  "Fictional data only ·": [
+    "Только вымышленные данные ·",
+    "Faqat xayoliy ma’lumotlar ·"
+  ],
+  "Saved to this browser": [
+    "Сохранение в этом браузере",
+    "Shu brauzerda saqlanadi"
+  ],
+  "Approved demo record · locked": [
+    "Утверждённая демозапись · заблокировано",
+    "Tasdiqlangan namuna yozuvi · qulflangan"
+  ],
+  "Read-only demo view": [
+    "Демопросмотр без изменений",
+    "Faqat ko‘rish uchun namuna"
+  ],
+  "Each slot represents a 60-minute interview. No invitations or calendar events are sent.": [
+    "Каждая встреча длится 60 минут. Приглашения и события календаря не отправляются.",
+    "Har bir suhbat 60 daqiqa davom etadi. Taklifnomalar va kalendar voqealari yuborilmaydi."
+  ],
+  "Status follows progress automatically. This tracks learning; course content is not included.": [
+    "Статус зависит от прогресса. Здесь ведётся учёт обучения, материалы курсов не включены.",
+    "Holat natijaga qarab avtomatik o‘zgaradi. Bu ta’lim hisobi; kurs materiallari kiritilmagan."
+  ],
+  "Simulation only. Approved means reviewed in this demo, never paid. Benefits notes do not enroll anyone.": [
+    "Только имитация. «Утверждено» не означает выплату. Заметки о льготах не оформляют участие.",
+    "Faqat namuna. «Tasdiqlangan» to‘lov qilinganini bildirmaydi. Imtiyoz qaydlari hech kimni ro‘yxatdan o‘tkazmaydi."
+  ],
+  "Moving a candidate to Hired also creates an active employee record. Existing hires are never duplicated.": [
+    "При переводе в статус «Принят» создаётся сотрудник. Повторная запись не создаётся.",
+    "Nomzodni «Ishga olingan» holatiga o‘tkazish faol xodim yozuvini yaratadi. Takroriy yozuv yaratilmaydi."
+  ],
+  "Good people. Great things ahead.": [
+    "Хорошая команда. Большие планы.",
+    "Yaxshi jamoa. Katta rejalar."
+  ],
+  "Find the people who will shape your next chapter.": [
+    "Найдите людей для новой главы вашей компании.",
+    "Yangi bosqichingizni yaratadigan insonlarni toping."
+  ],
+  "Make every conversation count.": [
+    "Каждое собеседование имеет значение.",
+    "Har bir suhbat ahamiyatli bo‘lsin."
+  ],
+  "A little growth, every day.": [
+    "Немного роста каждый день.",
+    "Har kuni ozgina rivojlanish."
+  ],
+  "A clear view of compensation and care.": [
+    "Зарплата и забота — на виду.",
+    "Ish haqi va g‘amxo‘rlik haqida aniq ma’lumot."
+  ],
+  "A thoughtful space for a better workplace.": [
+    "Внимание к вопросам рабочей среды.",
+    "Yaxshi ish muhiti uchun e’tiborli maydon."
+  ],
+  "Meaningful conversations. Measurable growth.": [
+    "Полезная обратная связь. Измеримый рост.",
+    "Mazmunli muloqot. O‘lchanadigan rivojlanish."
+  ],
+  "A name or title is required.": [
+    "Укажите имя или название.",
+    "Ism yoki nom kiriting."
+  ],
+  "Choose a valid status.": [
+    "Выберите допустимый статус.",
+    "To‘g‘ri holatni tanlang."
+  ],
+  "Enter a valid email address.": [
+    "Введите корректный адрес почты.",
+    "To‘g‘ri elektron pochta kiriting."
+  ],
+  "Select a candidate.": ["Выберите кандидата.", "Nomzodni tanlang."],
+  "Interview department must match the candidate.": [
+    "Отдел собеседования должен совпадать с отделом кандидата.",
+    "Suhbat bo‘limi nomzod bo‘limiga mos bo‘lishi kerak."
+  ],
+  "Choose a date, time, and interviewer.": [
+    "Укажите дату, время и интервьюера.",
+    "Sana, vaqt va suhbat o‘tkazuvchini tanlang."
+  ],
+  "This candidate or interviewer already has an interview at that time.": [
+    "У кандидата или интервьюера уже есть встреча в это время.",
+    "Bu vaqtda nomzod yoki suhbat o‘tkazuvchining boshqa suhbati bor."
+  ],
+  "Completed interviews need feedback and a whole-number rating from 1 to 5.": [
+    "Для завершения нужны комментарий и целая оценка от 1 до 5.",
+    "Yakunlash uchun fikr va 1 dan 5 gacha butun sonli baho kerak."
+  ],
+  "Select an employee.": ["Выберите сотрудника.", "Xodimni tanlang."],
+  "Department must match the selected employee.": [
+    "Отдел должен совпадать с отделом сотрудника.",
+    "Bo‘lim tanlangan xodim bo‘limiga mos bo‘lishi kerak."
+  ],
+  "Progress must be between 0 and 100.": [
+    "Прогресс должен быть от 0 до 100.",
+    "Natija 0 dan 100 gacha bo‘lishi kerak."
+  ],
+  "Use positive amounts and a deduction rate from 0 to 100.": [
+    "Введите неотрицательные суммы и процент удержания от 0 до 100.",
+    "Manfiy bo‘lmagan summalar va 0 dan 100 gacha ushlanma foizini kiriting."
+  ],
+  "Save this record as Reviewed before approving it.": [
+    "Перед утверждением сохраните статус «Проверено».",
+    "Tasdiqlashdan oldin «Tekshirilgan» holatida saqlang."
+  ],
+  "Approved demo records are locked. Create a new period instead.": [
+    "Утверждённые записи заблокированы. Создайте запись за новый период.",
+    "Tasdiqlangan yozuvlar qulflangan. Yangi davr yozuvini yarating."
+  ],
+  "A payroll record already exists for this employee and period.": [
+    "Расчёт для этого сотрудника за этот период уже существует.",
+    "Bu xodim va davr uchun ish haqi yozuvi allaqachon mavjud."
+  ],
+  "Add a resolution before resolving the case.": [
+    "Добавьте решение перед закрытием обращения.",
+    "Murojaatni yopishdan oldin yechim kiriting."
+  ],
+  "Completed reviews need feedback and a whole-number rating from 1 to 5.": [
+    "Для завершения оценки нужны комментарий и целая оценка от 1 до 5.",
+    "Baholashni yakunlash uchun fikr va 1 dan 5 gacha butun sonli baho kerak."
+  ],
+  "This demo role cannot change that record.": [
+    "Эта роль не может менять запись.",
+    "Bu namuna roli yozuvni o‘zgartira olmaydi."
+  ],
+  "This record is outside your team.": [
+    "Запись относится к другой команде.",
+    "Yozuv boshqa jamoaga tegishli."
+  ],
+  "Workplace support": [
+    "Поддержка сотрудников",
+    "Xodimlarni qo‘llab-quvvatlash"
+  ],
+  "Recruit candidates, schedule and evaluate interviews, track learning, explore compensation, manage sample workplace cases, and run reviews. Use the arrow on any record to open its form.": [
+    "Подбирайте кандидатов, планируйте собеседования, ведите обучение, условные начисления, обращения и оценки. Нажмите стрелку записи, чтобы открыть форму.",
+    "Nomzodlarni tanlang, suhbatlarni rejalashtiring, ta’lim, namunaviy ish haqi, murojaatlar va baholashlarni yuriting. Shaklni ochish uchun yozuv strelkasini bosing."
+  ],
+  "Create and edit records, search and filter, move candidates through stages, turn a hired candidate into an employee, detect interview time conflicts, record evaluations, track learning progress, and export the data visible to your demo role.": [
+    "Создание и изменение записей, поиск, фильтры, этапы подбора, создание сотрудника при найме, проверка конфликтов встреч, оценки, прогресс обучения и экспорт доступных данных.",
+    "Yozuv yaratish va tahrirlash, qidiruv, filtrlar, qabul bosqichlari, ishga olinganda xodim yaratish, suhbat to‘qnashuvlarini tekshirish, baholash, ta’lim natijalari va ko‘rinadigan ma’lumotlar eksporti ishlaydi."
+  ],
+  "Role switching is a UI preview, not secure sign-in. Payroll is arithmetic and status tracking only. No emails, invitations, calendar sync, course content, tax filings, benefits enrollment, or payments are sent.": [
+    "Роли — лишь демонстрация интерфейса, не защищённая авторизация. Зарплата — только арифметика и статусы. Нет писем, приглашений, синхронизации календаря, курсов, налоговой отчётности, оформления льгот и выплат.",
+    "Rollar faqat interfeys namunasi, himoyalangan kirish emas. Ish haqi faqat arifmetika va holat hisobidir. Xatlar, taklifnomalar, kalendar sinxronlash, kurslar, soliq hisobotlari, imtiyoz rasmiylashtirish va to‘lovlar yo‘q."
+  ],
+  "Records stay in this browser’s localStorage. They are not encrypted or shared across devices. Clearing site data removes them. Anyone using this browser can switch roles. The activity log is editable browser data, not a protected audit trail.": [
+    "Записи остаются в localStorage браузера без шифрования и синхронизации. Очистка данных сайта удаляет их. Любой пользователь браузера может сменить роль. Журнал не является защищённым аудитом.",
+    "Yozuvlar brauzer localStorage xotirasida shifrlanmasdan va qurilmalararo sinxronlanmasdan qoladi. Sayt ma’lumotlarini tozalash ularni o‘chiradi. Har qanday brauzer foydalanuvchisi rolni almashtirishi mumkin. Jurnal himoyalangan audit emas."
+  ],
+  "Candidate records": ["Записи кандидатов", "Nomzod yozuvlari"],
+  "Employee records": ["Записи сотрудников", "Xodim yozuvlari"],
+  "Interview records": ["Записи собеседований", "Suhbat yozuvlari"],
+  "Learning plan records": ["Планы обучения", "O‘quv rejalari"],
+  "Payroll record records": ["Расчёты зарплаты", "Ish haqi yozuvlari"],
+  "Case records": ["Обращения", "Murojaatlar"],
+  "Review records": ["Оценки", "Baholashlar"],
+  "Portfolio conversation": ["Обсуждение портфолио", "Portfolio muhokamasi"],
+  "Technical interview": ["Техническое собеседование", "Texnik suhbat"],
+  "Culture & collaboration": [
+    "Культура и сотрудничество",
+    "Madaniyat va hamkorlik"
+  ],
+  "Product Engineer": ["Продуктовый разработчик", "Mahsulot dasturchisi"],
+  "Design Lead": ["Руководитель дизайна", "Dizayn rahbari"],
+  "Engineering Manager": ["Руководитель разработки", "Dasturlash rahbari"],
+  "People Partner": ["HR-партнёр", "HR hamkori"],
+  "Leading with empathy": [
+    "Эмпатичное руководство",
+    "Hamdardlik bilan boshqarish"
+  ],
+  "Accessible product design": [
+    "Доступный дизайн продуктов",
+    "Qulay mahsulot dizayni"
+  ],
+  "Security essentials": ["Основы безопасности", "Xavfsizlik asoslari"],
+  "Modern React patterns": [
+    "Современные подходы React",
+    "Zamonaviy React usullari"
+  ],
+  "Leadership": ["Лидерство", "Yetakchilik"],
+  "Compliance": ["Соответствие требованиям", "Talablarga muvofiqlik"]
+}

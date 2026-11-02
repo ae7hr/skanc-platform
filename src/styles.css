@@ -2757,3 +2757,35 @@ dialog::backdrop {
 .table-scroll {
   position: relative;
 }
+.language-select {
+  min-width: 106px;
+  color: #35553d;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.top-actions {
+  gap: 12px;
+}
+@media (max-width: 800px) {
+  .top-actions .demo-pill {
+    display: none;
+  }
+  .language-select {
+    min-width: 93px;
+    max-width: 110px;
+    font-size: 11px;
+  }
+  .topbar {
+    gap: 5px;
+  }
+  .breadcrumb {
+    font-size: 10px;
+    min-width: 0;
+  }
+  .breadcrumb strong {
+    max-width: 115px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

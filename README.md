@@ -75,3 +75,6 @@ Before using real data, replace the browser store with authenticated server endp
 Dialogs use native modal focus handling and Escape support. Inputs have labels; actions have accessible names. Tables scroll horizontally on narrow screens while the sidebar becomes a collapsible mobile menu. Respect reduced-motion preferences.
 
 Framework references: [React client APIs](https://react.dev/reference/react-dom/client), [Vite guide](https://vite.dev/guide/).
+
+## Languages
+Use the language selector in the top bar for English, O‘zbekcha (Latin), or Русский. Your choice persists in this browser. Interface labels, statuses, validation messages, dates, and amounts are localized. Stored workflow codes and user-entered names, notes, and other record content are preserved; no external translation service is used.
