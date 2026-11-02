@@ -16,7 +16,7 @@
   "HR admin": ["HR-администратор", "HR administratori"],
   "Hiring manager": ["Руководитель найма", "Ishga qabul menejeri"],
   "Employee": ["Сотрудник", "Xodim"],
-  "employee": ["сотрудника", "xodim"],
+  "employee": ["Сотрудник", "Xodim"],
   "candidate": ["кандидата", "nomzod"],
   "interview": ["собеседование", "suhbat"],
   "learning plan": ["план обучения", "o‘quv rejasi"],
@@ -679,5 +679,305 @@
     "Zamonaviy React usullari"
   ],
   "Leadership": ["Лидерство", "Yetakchilik"],
-  "Compliance": ["Соответствие требованиям", "Talablarga muvofiqlik"]
+  "Compliance": ["Соответствие требованиям", "Talablarga muvofiqlik"],
+  "Clients": ["Клиенты", "Mijozlar"],
+  "Projects": ["Проекты", "Loyihalar"],
+  "Orders": ["Заказы", "Buyurtmalar"],
+  "Concerts & events": ["Концерты и мероприятия", "Konsertlar va tadbirlar"],
+  "Events": ["Мероприятия", "Tadbirlar"],
+  "Delivered": ["Сдано", "Topshirilgan"],
+  "Archived": ["В архиве", "Arxivlangan"],
+  "Brief": ["Бриф", "Brif"],
+  "Quoted": ["Смета отправлена", "Smeta yuborilgan"],
+  "Planned": ["Запланировано", "Rejalashtirilgan"],
+  "Live": ["В эфире / на сцене", "Jonli efirda / sahnada"],
+  "CREATIVE STUDIO": ["КРЕАТИВНАЯ СТУДИЯ", "IJODIY STUDIYA"],
+  "STUDIO OPERATIONS": ["РАБОТА СТУДИИ", "STUDIYA ISHLARI"],
+  "PEOPLE & CULTURE": ["КОМАНДА И КУЛЬТУРА", "JAMOA VA MADANIYAT"],
+  "Connected workspace": ["Общее рабочее пространство", "Umumiy ish maydoni"],
+  "Refresh data": ["Обновить данные", "Ma’lumotlarni yangilash"],
+  "Your studio. In sync.": [
+    "Ваша студия. Всё под контролем.",
+    "Studiyangiz. Hammasi nazoratda."
+  ],
+  "Server storage": ["Серверная база", "Server bazasi"],
+  "CREATIVE OPERATIONS": ["УПРАВЛЕНИЕ СТУДИЕЙ", "STUDIYANI BOSHQARISH"],
+  "Great work starts here.": [
+    "Здесь начинается большая работа.",
+    "Ajoyib ish shu yerdan boshlanadi."
+  ],
+  "One studio. Every brief, every person, every stage.": [
+    "Одна студия. Все задачи, люди и сцены.",
+    "Bitta studiya. Barcha vazifalar, insonlar va sahnalar."
+  ],
+  "Ideas that move.": ["Идеи в движении.", "Harakatdagi g‘oyalar."],
+  "Work that connects.": [
+    "Дизайн, который объединяет.",
+    "Birlashtiradigan dizayn."
+  ],
+  "From a first sketch to the final encore. Keep your people and creative production moving together.": [
+    "От первого эскиза до финального выхода на бис. Объединяйте команду и творческое производство.",
+    "Birinchi eskizdan so‘nggi sahna chiqishigacha. Jamoa va ijodiy ishlab chiqarishni birgalikda boshqaring."
+  ],
+  "Open project workspace": ["Открыть проекты", "Loyihalarni ochish"],
+  "Active projects": ["Активные проекты", "Faol loyihalar"],
+  "Upcoming events": ["Предстоящие мероприятия", "Yaqinlashayotgan tadbirlar"],
+  "Team members": ["Сотрудники студии", "Studiya xodimlari"],
+  "View workspace": ["Открыть раздел", "Bo‘limni ochish"],
+  "PRODUCTION": ["ПРОИЗВОДСТВО", "ISHLAB CHIQARISH"],
+  "Projects in motion": ["Проекты в работе", "Jarayondagi loyihalar"],
+  "A blank canvas. A fresh start.": [
+    "Чистый лист. Новое начало.",
+    "Yangi sahifa. Yangi boshlanish."
+  ],
+  "Add your team and a client, then create your first project.": [
+    "Добавьте сотрудников и клиента, затем создайте первый проект.",
+    "Xodimlar va mijozni qo‘shing, keyin birinchi loyihani yarating."
+  ],
+  "Open clients": ["Открыть клиентов", "Mijozlarni ochish"],
+  "LIVE EXPERIENCE": ["КОНЦЕРТЫ И СОБЫТИЯ", "KONSERTLAR VA TADBIRLAR"],
+  "On the horizon": ["На горизонте", "Yaqin rejalar"],
+  "Your next show starts here.": [
+    "Ваше следующее шоу начинается здесь.",
+    "Navbatdagi shou shu yerdan boshlanadi."
+  ],
+  "Plan concert graphics, stage visuals, venues, and production leads in one place.": [
+    "Планируйте концертную графику, визуальное оформление, площадки и ответственных в одном месте.",
+    "Konsert grafikasi, sahna vizuallari, joylar va mas’ullarni bir joyda rejalashtiring."
+  ],
+  "Open events": ["Открыть мероприятия", "Tadbirlarni ochish"],
+  "A real workspace, ready for your records.": [
+    "Рабочая платформа для ваших данных.",
+    "Ma’lumotlaringiz uchun ish platformasi."
+  ],
+  "Shared database. Verified access. Recorded changes. No sample records are added automatically.": [
+    "Общая база, проверка доступа и журнал изменений. Примерные записи автоматически не добавляются.",
+    "Umumiy baza, tekshirilgan kirish va o‘zgarishlar jurnali. Namuna yozuvlari avtomatik qo‘shilmaydi."
+  ],
+  "Workspace settings": ["Настройки пространства", "Ish maydoni sozlamalari"],
+  "Access, records, and responsibility.": [
+    "Доступ, данные и ответственность.",
+    "Kirish, ma’lumotlar va mas’uliyat."
+  ],
+  "Your access": ["Ваш доступ", "Sizning kirish huquqingiz"],
+  "Your role is verified by the server. It cannot be changed in the browser.": [
+    "Ваша роль проверяется сервером. Изменить её в браузере нельзя.",
+    "Rolingiz serverda tekshiriladi. Uni brauzerda o‘zgartirib bo‘lmaydi."
+  ],
+  "Sign out": ["Выйти", "Chiqish"],
+  "Sign in": ["Войти", "Kirish"],
+  "Payroll responsibility": ["Учёт зарплаты", "Ish haqi hisobi"],
+  "Payroll records are operational tracking only. No payments, tax filings, or benefits enrollment are executed. Confirm amounts and deductions with your payroll provider.": [
+    "Здесь ведётся учёт зарплаты. Выплаты, налоговая отчётность и оформление льгот не выполняются. Проверяйте суммы и удержания с вашим расчётным сервисом.",
+    "Bu yerda ish haqi hisobi yuritiladi. To‘lovlar, soliq hisobotlari va imtiyozlarni rasmiylashtirish bajarilmaydi. Summalar va ushlanmalarni hisob xizmatingiz bilan tekshiring."
+  ],
+  "Exports contain sensitive information. Store them securely.": [
+    "Экспорт содержит конфиденциальные сведения. Храните файлы в безопасном месте.",
+    "Eksport maxfiy ma’lumotlarni o‘z ichiga oladi. Fayllarni xavfsiz saqlang."
+  ],
+  "Workspace members": [
+    "Участники пространства",
+    "Ish maydoni ishtirokchilari"
+  ],
+  "App membership and private Site access are separate. The owner must grant both before a teammate can enter.": [
+    "Членство в приложении и доступ к закрытому сайту настраиваются отдельно. Владелец должен предоставить оба разрешения.",
+    "Ilovaga a’zolik va yopiq saytga kirish alohida sozlanadi. Egasi ikkala ruxsatni ham berishi kerak."
+  ],
+  "Add member": ["Добавить участника", "Ishtirokchi qo‘shish"],
+  "Role": ["Роль", "Rol"],
+  "Workspace owner": ["Владелец пространства", "Ish maydoni egasi"],
+  "Disable access": ["Отключить доступ", "Kirishni o‘chirish"],
+  "Enable access": ["Включить доступ", "Kirishni yoqish"],
+  "Activity log": ["Журнал изменений", "O‘zgarishlar jurnali"],
+  "Latest 100 changes. Full history is retained in the database.": [
+    "Последние 100 изменений. Полная история хранится в базе.",
+    "Oxirgi 100 o‘zgarish. To‘liq tarix bazada saqlanadi."
+  ],
+  "No changes recorded yet.": [
+    "Изменений пока нет.",
+    "Hozircha o‘zgarishlar yo‘q."
+  ],
+  "Add record": ["Добавить запись", "Yozuv qo‘shish"],
+  "Restricted HR records. Visible only to workspace administrators.": [
+    "Закрытые HR-записи. Доступны только администраторам пространства.",
+    "Yopiq HR yozuvlari. Faqat ish maydoni administratorlariga ko‘rinadi."
+  ],
+  "Search": ["Поиск", "Qidirish"],
+  "Search records…": ["Поиск записей…", "Yozuvlarni qidirish…"],
+  "Ready for your first record.": [
+    "Всё готово для первой записи.",
+    "Birinchi yozuv uchun tayyor."
+  ],
+  "Create a record to start organizing your studio.": [
+    "Добавьте запись и начните работу студии.",
+    "Yozuv yarating va studiya ishlarini boshlang."
+  ],
+  "Access controlled": ["Проверка доступа", "Kirish nazorati"],
+  "Time zone": ["Часовой пояс", "Vaqt mintaqasi"],
+  "Built for the work behind the work.": [
+    "Для тех, кто создаёт результат.",
+    "Natija yaratuvchilar uchun."
+  ],
+  "Choose an option": ["Выберите значение", "Qiymatni tanlang"],
+  "Changes are saved to the shared workspace.": [
+    "Изменения сохраняются в общей базе.",
+    "O‘zgarishlar umumiy bazada saqlanadi."
+  ],
+  "Read-only record.": [
+    "Запись только для просмотра.",
+    "Yozuv faqat ko‘rish uchun."
+  ],
+  "Approval locks the record. It does not execute a payment.": [
+    "Утверждение блокирует запись, но не выполняет выплату.",
+    "Tasdiqlash yozuvni qulflaydi, lekin to‘lovni bajarmaydi."
+  ],
+  "Notes": ["Заметки", "Qaydlar"],
+  "Contact person": ["Контактное лицо", "Aloqa uchun shaxs"],
+  "Client": ["Клиент", "Mijoz"],
+  "Service": ["Услуга", "Xizmat"],
+  "Web design": ["Веб-дизайн", "Veb-dizayn"],
+  "Graphic design": ["Графический дизайн", "Grafik dizayn"],
+  "Concert visuals": ["Концертное оформление", "Konsert bezagi"],
+  "Project lead": ["Руководитель проекта", "Loyiha rahbari"],
+  "Production lead": [
+    "Ответственный за производство",
+    "Ishlab chiqarish mas’uli"
+  ],
+  "Deadline": ["Срок", "Muddat"],
+  "Budget · USD": ["Бюджет · USD", "Budjet · USD"],
+  "Amount · USD": ["Сумма · USD", "Summa · USD"],
+  "Project": ["Проект", "Loyiha"],
+  "Venue": ["Площадка", "Tadbir joyi"],
+  "Rating · 1–5": ["Оценка · 1–5", "Baho · 1–5"],
+  "Deduction · %": ["Удержание · %", "Ushlanma · %"],
+  "Resolution": ["Решение", "Yechim"],
+  "Relationships behind every creative brief.": [
+    "Отношения, с которых начинается каждый проект.",
+    "Har bir loyiha ortidagi hamkorlik."
+  ],
+  "Websites, graphics, and concert visuals — from brief to delivery.": [
+    "Сайты, графика и концертное оформление — от брифа до сдачи.",
+    "Saytlar, grafika va konsert bezagi — brifdan topshirishgacha."
+  ],
+  "Track scope, approvals, and production for each commission.": [
+    "Объём работ, согласования и производство по каждому заказу.",
+    "Har bir buyurtmaning ish hajmi, tasdiqlari va ishlab chiqarishini kuzating."
+  ],
+  "Coordinate creative production for the live stage.": [
+    "Координация творческого производства для сцены.",
+    "Sahna uchun ijodiy ishlab chiqarishni muvofiqlashtiring."
+  ],
+  "The SKANC team and the skills behind the work.": [
+    "Команда SKANC и её профессиональные навыки.",
+    "SKANC jamoasi va uning kasbiy ko‘nikmalari."
+  ],
+  "Build the next chapter of the SKANC team.": [
+    "Развивайте команду SKANC.",
+    "SKANC jamoasini rivojlantiring."
+  ],
+  "Schedule conversations and record structured feedback.": [
+    "Планируйте собеседования и записывайте обратную связь.",
+    "Suhbatlarni rejalashtiring va fikrlarni qayd eting."
+  ],
+  "Assign development plans and track team progress.": [
+    "Назначайте планы развития и отслеживайте прогресс.",
+    "Rivojlanish rejalarini belgilang va natijalarni kuzating."
+  ],
+  "Track compensation records and approvals. Payments are handled externally.": [
+    "Учёт начислений и согласований. Выплаты выполняются отдельно.",
+    "Hisoblashlar va tasdiqlarni yuriting. To‘lovlar tashqi xizmatda bajariladi."
+  ],
+  "Restricted HR case tracking with documented resolutions.": [
+    "Закрытый учёт HR-обращений с фиксацией решений.",
+    "Yechimlari qayd etiladigan yopiq HR murojaatlari hisobi."
+  ],
+  "Goals, feedback, and progress for every review cycle.": [
+    "Цели, обратная связь и прогресс за каждый период оценки.",
+    "Har bir baholash davri uchun maqsadlar, fikrlar va natijalar."
+  ],
+  "Invalid record.": ["Некорректная запись.", "Noto‘g‘ri yozuv."],
+  "Invalid field.": ["Некорректное поле.", "Noto‘g‘ri maydon."],
+  "A field is too long.": [
+    "Слишком длинное значение поля.",
+    "Maydon qiymati juda uzun."
+  ],
+  "Invalid record or status.": [
+    "Некорректная запись или статус.",
+    "Yozuv yoki holat noto‘g‘ri."
+  ],
+  "Complete all required fields.": [
+    "Заполните все обязательные поля.",
+    "Barcha majburiy maydonlarni to‘ldiring."
+  ],
+  "Choose a valid option.": [
+    "Выберите допустимое значение.",
+    "To‘g‘ri qiymatni tanlang."
+  ],
+  "Use non-negative numbers.": [
+    "Введите неотрицательные числа.",
+    "Manfiy bo‘lmagan sonlarni kiriting."
+  ],
+  "Enter a valid date or time.": [
+    "Введите корректную дату или время.",
+    "To‘g‘ri sana yoki vaqt kiriting."
+  ],
+  "Access denied.": ["Доступ запрещён.", "Kirish taqiqlangan."],
+  "Linked records must be accessible and in the same department.": [
+    "Связанные записи должны быть доступны и относиться к одному отделу.",
+    "Bog‘langan yozuvlar ochiq va bir bo‘limga tegishli bo‘lishi kerak."
+  ],
+  "Interview time conflict.": [
+    "Время собеседования пересекается с другой встречей.",
+    "Suhbat vaqti boshqa uchrashuv bilan to‘qnashmoqda."
+  ],
+  "Completed records require feedback and a rating from 1 to 5.": [
+    "Для завершения нужны комментарий и оценка от 1 до 5.",
+    "Yakunlash uchun fikr va 1 dan 5 gacha baho kerak."
+  ],
+  "Deduction rate must be between 0 and 100.": [
+    "Удержание должно быть от 0 до 100%.",
+    "Ushlanma 0 dan 100 foizgacha bo‘lishi kerak."
+  ],
+  "Approved payroll records are locked.": [
+    "Утверждённые расчёты заблокированы.",
+    "Tasdiqlangan hisoblar qulflangan."
+  ],
+  "Contact the workspace owner to configure access.": [
+    "Обратитесь к владельцу для настройки доступа.",
+    "Kirishni sozlash uchun ish maydoni egasiga murojaat qiling."
+  ],
+  "Try again": ["Повторить", "Qayta urinish"],
+  "Unable to load workspace.": [
+    "Не удалось загрузить пространство.",
+    "Ish maydonini yuklab bo‘lmadi."
+  ],
+  "Unable to save record.": [
+    "Не удалось сохранить запись.",
+    "Yozuvni saqlab bo‘lmadi."
+  ],
+  "Changes saved.": ["Изменения сохранены.", "O‘zgarishlar saqlandi."],
+  "Sign in required.": ["Необходимо войти.", "Tizimga kirish kerak."],
+  "Workspace configuration is incomplete.": [
+    "Настройка пространства не завершена.",
+    "Ish maydoni sozlanishi tugallanmagan."
+  ],
+  "Data changed. Reload and try again.": [
+    "Данные изменились. Обновите и повторите.",
+    "Ma’lumotlar o‘zgargan. Yangilab, qayta urinib ko‘ring."
+  ],
+  "Invalid member.": [
+    "Некорректные данные участника.",
+    "Ishtirokchi ma’lumotlari noto‘g‘ri."
+  ],
+  "The owner cannot be changed here.": [
+    "Владельца нельзя изменить здесь.",
+    "Bu yerda egani o‘zgartirib bo‘lmaydi."
+  ],
+  "Department is required.": ["Укажите отдел.", "Bo‘limni ko‘rsating."],
+  "Select the matching employee profile.": [
+    "Выберите профиль сотрудника из нужного отдела.",
+    "Kerakli bo‘limdagi xodim profilini tanlang."
+  ],
+  "admin": ["Администратор", "Administrator"],
+  "manager": ["Руководитель отдела", "Bo‘lim rahbari"]
 }

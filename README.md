@@ -1,80 +1,81 @@
-# Folio — People & work
+# SKANC — Creative operations
 
-A responsive HR management starter built with React 19, TypeScript, Vite, and Lucide icons. No API keys or services are required. All supplied people and records are fictional.
+Workspace for a studio delivering websites, graphic design, and concert visuals. React 19, TypeScript, Vinext, Cloudflare Workers, D1, and Drizzle. Interface: English, Russian, Uzbek (Latin).
+
+## Version history
+
+The original HR starter was pushed first and is preserved in the [hr-baseline-v1 tag](https://github.com/ae7hr/skanc-platform/tree/hr-baseline-v1). The main branch contains expanded SKANC. Public source code and the private deployed workspace have separate access settings. No real records or credentials belong in Git.
+
+## Features
+
+- Clients and contacts; projects linked to clients and team leads; orders with quotes, approvals, production and delivery; concert/event production with dates, venues and responsible staff.
+- Employee directory, recruitment, hiring-to-employee conversion, interview scheduling/feedback, learning progress, payroll record approvals, restricted HR cases, performance reviews.
+- Shared server database, server-side validation and authorization, membership roles, same-origin write checks, concurrent-save conflict detection, and a database activity history written with successful mutations.
+- Search, status filters, linked forms, visible-record JSON export, responsive navigation and saved language preference. Production starts empty, without fictional records.
+
+Create employees and clients first, then projects, orders and events. Linked records must be in the same department. Use statuses to archive/cancel; record deletion is not exposed. Interviews use Asia/Tashkent and 60-minute slots, reject overlapping candidate/interviewer times, and require feedback plus an integer rating from 1–5 when completed. Reviews have the same completion requirement. Learning status follows progress. Hiring creates an employee once.
+
+## Roles and access
+
+| Role               | Access                                                                                                                             |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Owner              | Configured by the SKANC_OWNER_EMAIL runtime secret; always administrator; cannot be removed in the app.                            |
+| Administrator      | All modules, membership management, exports, full activity visibility.                                                             |
+| Department manager | Department-scoped studio operations, hiring, interviews, training and reviews; people directory read-only; no payroll or HR cases. |
+| Employee           | Own profile, learning, reviews and projects/events where they are lead; read-only.                                                 |
+
+Administrators add members using their ChatGPT sign-in email, choose a role and department, and link employees to their profile. Existing emails update membership. Members can be disabled/re-enabled. This does not send invitations. Private Sites access and app membership are separate checks: the owner must grant the intended person access through Sites sharing settings as well. The application never broadens the Site audience automatically.
+
+Production identity comes from Sites authentication, never a browser role selector. Do not expose this Worker directly behind a gateway that accepts user-supplied identity headers. Deploying outside Sites requires a trusted authentication adapter first.
+
+## External services and limits
+
+Payroll is operational record tracking, not a payroll/payment provider. Amounts are USD; the deduction percentage is an explicit input, not a jurisdiction's tax logic. Draft → Reviewed → Approved requires a saved review; approval locks the record. No money, tax returns, payslips, or benefits enrollment are issued. Course content, email, calendar sync, meeting links, accounting integrations, file uploads, and production media hosting are not connected. No automated employment decisions are made.
+
+Exports may contain sensitive information; store them securely. Downloads are not import/restore tools. The UI shows the latest 100 activity entries; full history stays in D1. Configure database backups/recovery, retention policy and operational monitoring in your hosting account before relying on the system for important business records.
+
+This version stores a versioned workspace document in D1. Saves use compare-and-swap to reject stale edits, rather than overwriting another user's work. Larger workloads and reporting may warrant normalized record tables. Deactivated users lose app access; changing private Site access is a separate owner operation.
 
 ## Run locally
 
-Install Node.js **24 LTS** (the tested environment is 24.19). Open a terminal in this folder:
+Use Node.js 24. Install dependencies from the lockfile:
 
 ```sh
 npm ci
+```
+
+Copy .dev.vars.example to .dev.vars. The local value seedy@sites.test matches the bundled development-only sign-in. It is not a production account. Local secrets and database files are ignored by Git.
+
+```sh
+npm run build
+node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_lively_darkstar.sql
 npm run dev
 ```
 
-Open the Local URL printed by Vite, normally http://127.0.0.1:5173. Stop with Ctrl+C.
+Apply the migration only once to a new local database. Visit the printed local URL and /signin-with-chatgpt?return_to=/ to enter as the local test identity. Local and production databases are separate. Development identity simulation is excluded from production builds. Keep the dev server on loopback.
 
 ```sh
-npm test          # Built-in Node test runner: workflow and permission tests
-npm run build    # TypeScript check + production build into dist/
-npm run preview  # Serve the production build locally
+npm test
+npx tsc --noEmit
+npm run build
 ```
 
-Deploy `dist/` to a static host. The app uses internal navigation state and needs no special route rewriting. Each origin/browser has separate demo data. The bundled `.openai/hosting.json` identifies the private Sites deployment created for this starter; remove that identity before registering an independent Site.
+Tests cover the baseline and SKANC domain: role isolation, linked records, hiring, interview conflicts, completion rules, payroll review/locking and language persistence. The GitHub workflow runs tests, type checks and build.
 
-## Functional features
+## Deploy with Sites
 
-| Area               | Implemented starter behavior                                                                                                                                                                                                 |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Overview           | Record-driven metrics, candidate/review charts, upcoming interview list, people, learning progress, quick navigation                                                                                                         |
-| People             | Directory, create/edit profiles, department and status tracking                                                                                                                                                              |
-| Recruitment        | Candidate forms, source and notes, list/pipeline views, search, filters, pagination, status changes, automatic employee creation when hired                                                                                  |
-| Interviews         | Scheduling, candidate links, interviewer, format, date/time, overlapping 60-minute slot detection for the candidate/interviewer, cancellation, evaluation ratings and feedback                                               |
-| Learning           | Assign an employee, skill category, development goal, target date, progress; status follows progress automatically                                                                                                           |
-| Payroll            | Fictional USD base/bonus and configurable percentage deduction, rounded gross/deduction/net, benefits notes, Draft → Reviewed → Approved tracking; approval requires a previously saved Reviewed record and locks the record |
-| Employee relations | Fictional case summary, owner, priority and status; resolution required for Resolved                                                                                                                                         |
-| Performance        | Employee, cycle, reviewer, goal, rating and feedback; completed reviews require a whole-number rating from 1–5 and feedback                                                                                                  |
-| Workspace          | Browser persistence, local activity log, export of visible records to JSON, reset with confirmation, role preview and demo guide                                                                                             |
+The hosting manifest declares D1 binding DB and the existing Site identity. Configure the owner's actual ChatGPT sign-in email as the secret SKANC_OWNER_EMAIL in Sites runtime settings before deployment. No owner email or credential is embedded in source. The supported Sites workflow provisions D1 and applies committed migrations before publication. Keep the private audience. GitHub pushes do not automatically publish to Sites.
 
-Open a row using its arrow to edit it. Changes update the dashboard and persist after refreshing. Use Settings & privacy to switch demo roles or restore the examples. Approved payroll records are locked; create a new period for a new record. Hiring creates an employee once; changing the candidate back later does not delete the employee. Interview times use Asia/Tashkent (UTC+5) in this single-timezone starter; no timezone conversion is performed. The dashboard uses November 2, 2026 as its explicitly labeled demo scenario, independent of the real current date.
+For an independent deployment, register your own Site and replace the hosting identity through the supported workflow. Future schema changes use npm run db:generate. Inspect and commit generated SQL and Drizzle metadata. Applied migrations are immutable.
 
-## Demo role behavior
+## Source map
 
-| Role           | Visibility and editing                                                                                                                                                           |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| HR admin       | All modules; create and edit all records; activity log; reset                                                                                                                    |
-| Hiring manager | Engineering candidates, interviews, people, learning and reviews; can edit recruitment, interviews, learning and reviews; people directory is read-only; no payroll or relations |
-| Employee       | Alex Morgan's profile, learning assignments and reviews; read-only                                                                                                               |
+- src/Skanc.tsx and src/skanc.css: production UI and forms.
+- src/skanc-model.ts: validation, workflows and access rules reused on the server.
+- app/api/workspace/route.ts: identity, membership, persistence, concurrent-save checks and activity writes.
+- app/chatgpt-auth.ts: Sites sign-in integration.
+- db/schema.ts and drizzle/: schema and migrations.
+- src/i18n.ts and src/translations.json: translations; entered names and notes remain unchanged.
+- src/App.tsx and src/model.ts: preserved starter, not served by the production route. The original runnable version is in the baseline tag.
 
-The role guards also run inside the local mutation function and exports use visible records only. These are useful examples of application rules, **not enforceable security**. A user controls the browser and can inspect the JavaScript, localStorage, and bundled sample data. All example data ships in the client. Role selection resets to HR admin when the app reloads.
-
-## What is mock or not connected
-
-- No sign-in, session management, backend, protected database, multi-user synchronization, encryption, or immutable audit trail.
-- No real payroll, tax calculation, legal compliance, payment processing, bank files, payslips, benefits enrollment, or financial integrations. The percentage deduction is arbitrary, **not a jurisdiction's tax rule**. “Approved” is only a demo status.
-- No email delivery, calendar sync, meeting links, CV uploads, course content, learning-provider integration, or review notifications.
-- Benefits are text notes. Learning is progress tracking. Ratings and evaluation notes are entered by the demo user; no automated employment decisions occur.
-- The “Acme Studio” organization and all people/records are fictional. Example emails use the reserved `.test` domain.
-- Browser storage is best-effort and unencrypted. Clearing it deletes changes; another person using the same browser can see them. If storage fails, the app warns that changes are session-only. JSON exports are plain text.
-- No deletion is exposed per record; use statuses to archive/cancel, or reset the entire sample workspace. Reset affects only this origin in this browser. Exports are downloads, not an import/restore feature.
-- Google Fonts is the only third-party content request. Font loading sends normal request metadata to Google; remove the CSS import to use system-font fallbacks without that request. No analytics or tracking SDK is installed.
-
-**Do not enter real employee, applicant, compensation, medical, bank, identity, or confidential workplace information.**
-
-## Preparing for production
-
-Before using real data, replace the browser store with authenticated server endpoints and a protected database. Implement server-side organization/team/record permissions, identity verification, sessions, encryption in transit and at rest, secure backups, protected audit records, retention/deletion controls, input validation, rate limiting, monitoring, and jurisdiction-specific privacy requirements. Review sensitive-field access and exports. Select a qualified payroll provider and define approval responsibilities separately from payment execution. Review accessibility and perform independent security testing. Private hosting access, when used, does not turn this client demo into a secure HR system.
-
-## Source layout
-
-- `src/main.tsx`: React entry point.
-- `src/App.tsx`: workspace UI, dashboard, module tables/board, modal forms, settings.
-- `src/model.ts`: data model, fictional seed, demo visibility rules, validation, workflow mutations, payroll arithmetic.
-- `src/model.test.ts`: meaningful domain tests using Node's built-in test runner.
-- `src/styles.css`: responsive layout, typography, components, mobile navigation, reduced-motion support.
-
-Dialogs use native modal focus handling and Escape support. Inputs have labels; actions have accessible names. Tables scroll horizontally on narrow screens while the sidebar becomes a collapsible mobile menu. Respect reduced-motion preferences.
-
-Framework references: [React client APIs](https://react.dev/reference/react-dom/client), [Vite guide](https://vite.dev/guide/).
-
-## Languages
-Use the language selector in the top bar for English, O‘zbekcha (Latin), or Русский. Your choice persists in this browser. Interface labels, statuses, validation messages, dates, and amounts are localized. Stored workflow codes and user-entered names, notes, and other record content are preserved; no external translation service is used.
+Vendored framework/Sites support scripts retain their bundled licenses. Never commit .sites-runtime, .wrangler, .dev.vars, database dumps or record exports.

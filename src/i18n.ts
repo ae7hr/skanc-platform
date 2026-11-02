@@ -16,10 +16,10 @@ export function setLanguage(value: Language) {
     document.documentElement.lang = value;
     document.title =
       value === "ru"
-        ? "Folio · Команда и работа"
+        ? "SKANC · Команда и работа"
         : value === "uz"
-          ? "Folio · Jamoa va ish"
-          : "Folio · People & work";
+          ? "SKANC · Jamoa va ish"
+          : "SKANC · People & work";
   }
   try {
     localStorage.setItem("folio-language", value);
