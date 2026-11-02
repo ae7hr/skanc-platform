@@ -102,13 +102,7 @@ const initials = (n: string) =>
     .map((x) => x[0])
     .slice(0, 2)
     .join("");
-const dateLabel = (s: string) =>
-  s
-    ? new Date(s + "T12:00:00").toLocaleDateString(locale(), {
-        month: "short",
-        day: "numeric",
-      })
-    : "—";
+const dateLabel = (s: string) => !s ? '—' : locale().startsWith('uz') ? Number(s.slice(8,10)) + '-' + ['yanvar','fevral','mart','aprel','may','iyun','iyul','avgust','sentabr','oktabr','noyabr','dekabr'][Number(s.slice(5,7))-1] : new Date(s + 'T12:00:00').toLocaleDateString(locale(), {month:'short',day:'numeric'});
 function Avatar({ name, small = false }: { name: string; small?: boolean }) {
   return (
     <span className={`avatar ${small ? "small" : ""} color-${name.length % 5}`}>
