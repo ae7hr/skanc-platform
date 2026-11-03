@@ -1,7 +1,7 @@
-import { requireChatGPTUser } from "./chatgpt-auth";
+import AuthGate from "../src/AuthGate";
 import Skanc from "../src/Skanc";
 export const dynamic = "force-dynamic";
 export default async function Page() {
-  await requireChatGPTUser("/");
-  return <Skanc />;
+
+  return <AuthGate><Skanc /></AuthGate>;
 }

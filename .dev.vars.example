@@ -1,1 +1,4 @@
-SKANC_OWNER_EMAIL=seedy@sites.test
+SKANC_OWNER_EMAIL=owner@example.test
+# Public web configuration from Firebase Project settings > Your apps.
+# Enable Google and Email/Password; authorize the app's domain and localhost.
+SKANC_FIREBASE_CONFIG='{"apiKey":"YOUR_PUBLIC_API_KEY","authDomain":"YOUR_PROJECT.firebaseapp.com","projectId":"YOUR_PROJECT","appId":"YOUR_APP_ID"}'

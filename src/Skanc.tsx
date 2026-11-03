@@ -1,4 +1,5 @@
 "use client";
+import { useWorkspaceAuth } from "./AuthGate";
 import React, { useEffect, useRef, useState } from "react";
 import {
   Activity,
@@ -105,6 +106,7 @@ function Dialog({
   );
 }
 export default function Skanc() {
+  const workspaceAuth = useWorkspaceAuth();
   const [language, changeLanguage] = useState<Language>("en");
   const [loaded, setLoaded] = useState(false);
   const [snapshot, setSnapshot] = useState<Snapshot | null>(null);
@@ -135,7 +137,7 @@ export default function Skanc() {
   async function reload() {
     try {
       setError("");
-      const response = await fetch("/api/workspace", { cache: "no-store" });
+      const response = await workspaceAuth.request("/api/workspace", { cache: "no-store" });
       const data = (await response.json()) as Snapshot & { error?: string };
       if (!response.ok)
         throw new Error(data.error || "Unable to load workspace.");
@@ -148,7 +150,7 @@ export default function Skanc() {
     setBusy(true);
     setFormError("");
     try {
-      const response = await fetch("/api/workspace", {
+      const response = await workspaceAuth.request("/api/workspace", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...body, revision: snapshot?.revision }),
@@ -188,7 +190,7 @@ export default function Skanc() {
             <button className="sk-button primary" onClick={() => void reload()}>
               {t("Try again")}
             </button>
-            <a href="/signin-with-chatgpt?return_to=%2F">{t("Sign in")}</a>
+            <button className="sk-button" onClick={()=>void workspaceAuth.logout()}>{t("Use another account")}</button>
           </>
         ) : (
           <>
@@ -619,12 +621,9 @@ export default function Skanc() {
                       "Your role is verified by the server. It cannot be changed in the browser.",
                     )}
                   </p>
-                  <a
-                    className="sk-button"
-                    href="/signout-with-chatgpt?return_to=%2F"
-                  >
+                  <button className="sk-button" onClick={()=>void workspaceAuth.logout()}>
                     {t("Sign out")}
-                  </a>
+                  </button>
                 </section>
                 <section className="sk-card sk-settings-card">
                   <Wallet size={24} />
@@ -654,7 +653,7 @@ export default function Skanc() {
                         <h2>{t("Workspace members")}</h2>
                         <p>
                           {t(
-                            "App membership and private Site access are separate. The owner must grant both before a teammate can enter.",
+                            "Only verified accounts with an assigned workspace role can access records.",
                           )}
                         </p>
                       </div>
@@ -1317,7 +1316,7 @@ function MemberDialog({
         <div className="sk-dialog-body">
           <p className="sk-form-note">
             {t(
-              "App membership and private Site access are separate. The owner must grant both before a teammate can enter.",
+              "Only verified accounts with an assigned workspace role can access records.",
             )}
           </p>
           <div className="sk-form-grid">

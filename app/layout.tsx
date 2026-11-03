@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "../src/skanc.css";
+import "../src/auth.css";
 export const metadata: Metadata = {
   title: "SKANC — Creative operations",
   description:

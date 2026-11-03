@@ -1,5 +1,6 @@
 import { env } from "cloudflare:workers";
-import { getChatGPTUser } from "../../chatgpt-auth";
+import { getFirebaseUser } from "../../firebase-auth";
+import { AuthenticationError } from "../../../src/firebase-token";
 import {
   applySave,
   emptyWorkspace,
@@ -17,8 +18,8 @@ const respond = (body: unknown, status = 200) =>
       "X-Content-Type-Options": "nosniff",
     },
   });
-async function context() {
-  const user = await getChatGPTUser();
+async function context(request: Request) {
+  const user = await getFirebaseUser(request);
   if (!user) throw new Error("Sign in required.");
   const bindings = env as unknown as Bindings;
   if (!bindings.DB || !bindings.SKANC_OWNER_EMAIL)
@@ -54,9 +55,9 @@ async function snapshot(db: D1Database) {
     revision: row.revision,
   };
 }
-export async function GET() {
+export async function GET(request: Request) {
   try {
-    const { db, member } = await context(),
+    const { db, member } = await context(request),
       { state, revision } = await snapshot(db);
     const audit =
       member.role === "admin"
@@ -89,7 +90,9 @@ export async function GET() {
     const message = (e as Error).message;
     return respond(
       { error: message },
-      message === "Sign in required."
+      e instanceof AuthenticationError
+        ? e.status
+        : message === "Sign in required."
         ? 401
         : message === "Access denied."
           ? 403
@@ -107,7 +110,7 @@ export async function POST(request: Request) {
     if (raw.length > 64000)
       return respond({ error: "Request too large." }, 413);
     const body = JSON.parse(raw);
-    const { db, member, user, owner } = await context();
+    const { db, member, user, owner } = await context(request);
     const { state, revision } = await snapshot(db);
     const mutation = crypto.randomUUID(),
       at = new Date().toISOString();
@@ -199,7 +202,7 @@ export async function POST(request: Request) {
             ? message
             : "Unable to save record.",
       },
-      message === "Access denied." ? 403 : 400,
+      e instanceof AuthenticationError ? e.status : message === "Access denied." ? 403 : 400,
     );
   }
 }
